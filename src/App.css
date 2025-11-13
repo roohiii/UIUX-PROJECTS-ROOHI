@@ -1,0 +1,100 @@
+/* 🎨 Global Styles */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0f0f0f;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+
+h1, h2, h3, h4, p {
+  margin: 0;
+}
+
+/* 🟥 Navbar */
+nav {
+  background-color: #202020;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  border-bottom: 1px solid #333;
+}
+
+nav input {
+  width: 300px;
+  padding: 8px;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+}
+
+/* 📺 Sidebar */
+aside {
+  background-color: #181818;
+  color: white;
+  width: 220px;
+  height: 100vh;
+  padding: 20px;
+  border-right: 1px solid #222;
+}
+
+aside ul {
+  list-style: none;
+  padding: 0;
+}
+
+aside li {
+  margin: 15px 0;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+aside li:hover {
+  color: #ff0000;
+}
+
+/* 🎬 Video Grid */
+main {
+  flex: 1;
+  padding: 20px;
+  background-color: #0f0f0f;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.video-card {
+  background-color: #202020;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.video-card:hover {
+  transform: scale(1.05);
+}
+
+.video-card img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+}
+
+.video-card .info {
+  padding: 10px;
+}
+
+.video-card h4 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.video-card p {
+  color: #aaa;
+  font-size: 14px;
+}
